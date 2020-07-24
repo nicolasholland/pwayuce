@@ -29,7 +29,7 @@ div.title p {
     position:absolute;
     bottom:0;
     margin-left: 50%;
-    margin-bottom: 20%;
+    margin-bottom: 10%;
     transform: translate(-50%, -50%);
 }
 
@@ -37,7 +37,7 @@ div.title p {
     position:absolute;
     bottom:0;
     margin-left: 50%;
-    margin-bottom: 10%;
+    margin-bottom: 5%;
     transform: translate(-50%, -50%);
 }
 
@@ -50,7 +50,7 @@ select, button {
     margin-top: 20%;
     left: 50vw;
     margin-right: -50vw;
-    width: 60vw;
+    width: 40vw;
     transform: translate(-50%, -50%);
 }
 
@@ -60,3 +60,37 @@ select, button {
     margin-left: 5%;
     margin-right: 5%;
 }
+
+@media only screen and (max-device-width: 480px) {
+    .himawari {
+        position: absolute;
+        margin-top: 20%;
+        left: 50vw;
+        margin-right: -50vw;
+        width: 90vw;
+        transform: translate(-50%, -50%);
+	}
+
+    .systemselections {
+        position: absolute;
+        bottom:0;
+        margin-left: 40%;
+        margin-bottom: 30%;
+    }
+
+    .plotselections {
+        position: absolute;
+        bottom:0;
+        margin-left: 40%;
+        margin-bottom: 5%;
+    }
+
+    .curve_chart {
+        position:relative;
+        margin-top: 5%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+}
+
+
