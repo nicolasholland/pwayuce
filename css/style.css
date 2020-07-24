@@ -46,11 +46,12 @@ select, button {
 }
 
 .himawari {
-    position:relative;
-    margin-top: 40%;
-    margin-left: 5vw;
-    margin-right: 5vw;
-    width: 90vw;
+    position: absolute;
+    margin-top: 20%;
+    left: 50vw;
+    margin-right: -50vw;
+    width: 60vw;
+    transform: translate(-50%, -50%);
 }
 
 .curve_chart {
