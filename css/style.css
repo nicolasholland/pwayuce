@@ -41,9 +41,6 @@ div.title p {
     transform: translate(-50%, -50%);
 }
 
-select, button {
-    font-size: 20px;
-}
 
 .himawari {
     position: absolute;
@@ -71,17 +68,16 @@ select, button {
         transform: translate(-50%, -50%);
 	}
 
-    .systemselections {
+    div.systemselections {
         position: absolute;
-        bottom:0;
-        margin-left: 40%;
-        margin-bottom: 30%;
+        margin-right: -50vw;
+        margin-bottom: 40%;
     }
 
-    .plotselections {
+    div.plotselections {
         position: absolute;
-        bottom:0;
-        margin-left: 40%;
+        left: 10vw;
+        margin-right: -30vw;
         margin-bottom: 5%;
     }
 
