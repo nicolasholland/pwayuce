@@ -1,0 +1,12 @@
+{
+    "name": "太阳光预测",
+    "short_name": "预测",
+    "icons": [{
+        "src": "img/icon512.png",
+        "type": "image/png",
+        "sizes": "512x512"
+    }],
+    "background_color": "#07bbdb",
+    "start_url": "/",
+    "display": "standalone"
+}
