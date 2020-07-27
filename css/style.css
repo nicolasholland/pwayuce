@@ -44,18 +44,20 @@ div.title p {
 
 .himawari {
     position: absolute;
+    margin-top: 10%;
+    left: 50vw;
+    margin-right: -50vw;
+    width: 400px;
+    transform: translate(-50%, -50%);
+}
+
+.curve_chart {
+    position: absolute;
     margin-top: 20%;
     left: 50vw;
     margin-right: -50vw;
     width: 40vw;
     transform: translate(-50%, -50%);
-}
-
-.curve_chart {
-    position:relative;
-    margin-top: 40%;
-    margin-left: 5%;
-    margin-right: 5%;
 }
 
 button{
@@ -77,6 +79,13 @@ button{
     }
 
 @media only screen and (max-device-width: 480px) {
+    div.title {
+    }
+
+    div.title p {
+    }
+
+
     .himawari {
         position: absolute;
         margin-top: 5%;
@@ -84,27 +93,24 @@ button{
         margin-right: -50vw;
         width: 90vw;
         transform: translate(-50%, -50%);
-	}
-
-    div.systemselections {
-        position: absolute;
-        margin-right: -50vw;
-        margin-bottom: 40%;
     }
 
-    div.plotselections {
-        position: absolute;
-        left: 10vw;
-        margin-right: -30vw;
-        margin-bottom: 5%;
+    .systemselections {
+        position:absolute;
+        bottom:0;
+        margin-bottom: 20%;
+    }
+
+    .plotselections {
+        position:absolute;
+        bottom:0px;
+        width: 80%;
     }
 
     .curve_chart {
         position: absolute;
-        margin-top: 20vh;
-        margin-left: 5vw;
-        margin-right: 5vw;
-        width: 90vw;
+        margin-top: 30vh;
+	    width: 80vw;
     }
 }
 
