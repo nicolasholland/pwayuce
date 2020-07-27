@@ -48,10 +48,7 @@ function gfs () {
 
 function stateColumns(val) {
     if (state.includes(val)) {
-        const index = state.indexOf(val);
-        if (index > -1) {
-            state.splice(index, val);
-        }
+        for( var i = 0; i < state.length; i++){ if ( state[i] === val) { state.splice(i, 1); }}
     } else {
         state.push( val )
     }
