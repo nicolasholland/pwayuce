@@ -7,6 +7,7 @@
     <title>预测</title>
 
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="manifest" href="manifest.webmanifest">
 
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
@@ -16,7 +17,7 @@
 <body>
     <script>
         if ('serviceWorker' in navigator) {
-            navigator.serviceWorker.register('./js/sw.js')
+            navigator.serviceWorker.register('./sw.js')
                 .then(reg => console.log(reg))
                 .catch(err => console.log(err));
         }
@@ -42,5 +43,24 @@
         <button type="button" onclick="changeState(3)">台北</button>
         <button type="button" onclick="changeState(4)">新加坡</button>
     </div>
+
+    <button id="install" style="display: none;">Install</button>
+    <script>
+        const installButton = document.getElementById("install");
+        let deferredPrompt;
+
+        window.addEventListener('beforeinstallprompt', evt => {
+            event.preventDefault();
+            deferredPrompt = evt;
+            installButton.style.display = 'block';
+        });
+
+        installButton.addEventListener('click', async () => {
+            await deferredPrompt.prompt();
+            const choiceResult = await deferredPrompt.userChoice;
+            console.log(choiceResult.outcome);
+        })
+    </script>
+
 </body>
 </html>

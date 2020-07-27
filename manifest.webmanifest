@@ -1,6 +1,7 @@
 {
-    "name": "太阳光预测",
-    "short_name": "预测",
+    "name": "Solar irradiance forecast",
+    "short_name": "Forecast",
+    "description" : "PWA that displays current GFS forecasts and himawari satellite images",
     "icons": [{
         "src": "img/icon512.png",
         "type": "image/png",
